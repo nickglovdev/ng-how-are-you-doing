@@ -1,4 +1,5 @@
 # Welcome to How Are You Doing? 
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#)
 
 >   A website that follows the mood of the user over time. The user will input information and will be placed into a card that are timestamp with a score of their last entry. 
@@ -16,6 +17,7 @@ install --save bootstrap
 ```sh
 npm start 
 json-server
+
 ```
 
 ## Author
@@ -24,6 +26,3 @@ json-server
 
 * Github: [@https:\/\/github.com\/nickglovdev](https://github.com/https:\/\/github.com\/nickglovdev)
 * LinkedIn: [@https:\/\/www.linkedin.com\/in\/nicholasdwglover\/](https://linkedin.com/in/https:\/\/www.linkedin.com\/in\/nicholasdwglover\/)
-
-
-
