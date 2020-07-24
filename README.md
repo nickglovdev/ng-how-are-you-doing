@@ -1,11 +1,19 @@
-<h1 align="center">Welcome to How Are You Doing? 👋</h1>
-<p>
-  <a href="https://docs.google.com/document/d/1kj9QDprdtgrP3cLzCtfEy17kbuAkHZzy53aXPWAVM0s/edit?usp=sharing" target="_blank">
-    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
-  </a>
-</p>
+# Welcome to How Are You Doing? 👋
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#)
 
-> A website that follows the mood of the user over time. The user will input information and will be placed into a card that is timestamp with a score of their last entry.
+>   A website that follows the mood of the user over time. The user will input information and will be placed into a card that are timestamp with a score of their last entry. 
+
+## Install
+
+```sh
+npx create-react-app npm install react-router-dom npm install --save bootstrap
+```
+
+## Usage
+
+```sh
+npm start json-server
+```
 
 ## Author
 
@@ -17,6 +25,7 @@
 ## Show your support
 
 Give a ⭐️ if this project helped you!
+
 
 ***
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
