@@ -18,10 +18,10 @@ const Login = props => {
     .then(usernames => {
       usernames.find(username => {
         if(username.username === credentials.user && username.password === credentials.password) {
-          const cred = ("credintials", JSON.stringify(credentials.user))
+          const loggedUser = ("credintials", JSON.stringify(credentials.user))
           const userloggingId = ("activeUser", username.id)
-          sessionStorage.id = userloggingId
-          sessionStorage.user = cred
+          localStorage.id = userloggingId
+          localStorage.user = loggedUser
           props.history.push("/");
         } else {
           alert("Password of Username is Wrong")

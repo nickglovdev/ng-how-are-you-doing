@@ -1,7 +1,7 @@
-import {Route, Redirect} from "react-router-dom";
-import React from "react";
+import {Route, Redirect} from "react-router-dom"
+import React from "react"
 import Login from "./login/Login"
-import Home from "./home/Home";
+import Home from "./home/Home"
 
 const ApplicationViews = () => {
     const isAuthenticated = () => sessionStorage.getItem("credentials") !== null;
