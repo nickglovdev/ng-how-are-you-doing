@@ -1,0 +1,26 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "username": "nick",
+            "password": "123"
+        }
+    ],
+    "points": [
+        {
+            "id": 1,
+            "cardSentence": "",
+            "cardPoints": 0,
+            "userId": 1
+        }
+    ],
+    "cards": [
+        {
+            "id": 1,
+            "encouragingWords": "",
+            "totalPoints": "",
+            "date": "01-02-20",
+            "userId": 1
+        }
+    ]
+}
