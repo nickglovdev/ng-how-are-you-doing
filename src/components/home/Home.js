@@ -4,7 +4,7 @@ const Home = () => {
     return (
         <>
           <div className="home">
-              <h2>How are you doing</h2>
+    <h2>How are you doing {sessionStorage.getItem('user').replace(/['"]+/g, '')}</h2>
           </div>
         </>
     )
