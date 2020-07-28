@@ -18,13 +18,13 @@ const QuestionsList = (props) => {
     }, []);
 
     return (
-        <section>
+        <form>
             {questions.map(question => <QuestionCard
                 key={question.id}
                 question={question}
                 {...props} />
             )}
-        </section>
+        </form>
     )
 
 }
