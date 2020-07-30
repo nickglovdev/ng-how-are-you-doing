@@ -7,5 +7,13 @@ export default {
     getAll() {
       return fetch(`${remoteURL}/cardForm`).then(result => result.json())
     },
-
+    post(newQuestion) {
+        return fetch(`${remoteURL}/cardForm`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(newQuestion)
+        }).then(data => data.json())
+      },
 }
