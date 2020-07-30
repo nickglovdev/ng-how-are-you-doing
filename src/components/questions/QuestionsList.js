@@ -9,7 +9,7 @@ import EmotionManager from '../../modules/EmotionManager';
 const QuestionsList = (props) => {
     const [questions, setQuestion] = useState([])
     const [number, setNumber] = useState({ "1": "0", "2": "0", "3": "0", "4": "0", "5": "0", "6": "0", "7": "0", "8": "0", "9": "0", "10": "0" })
-    const [emotionCardInfo] = useState({"totalPoints": 0, "date": ""})
+    const [emotionCardInfo] = useState({ "totalPoints": 0, "date": "", "groupPointsId": "" })
 
     const getQuestion = () => {
         return QuestionsManager.getAll()
@@ -19,7 +19,7 @@ const QuestionsList = (props) => {
     }
     // Setting up the field change of all of the dropdowns. They will go into a object.
     const fieldChange = evt => {
-        const stateToChange = {...number }
+        const stateToChange = { ...number }
         stateToChange[evt.target.id] = evt.target.value;
         setNumber(stateToChange);
         console.log(stateToChange)
@@ -46,10 +46,17 @@ const QuestionsList = (props) => {
         emotionCardInfo["totalPoints"] = dropdownCalculation(number)
         emotionCardInfo["date"] = (moment(new Date()).format("MM/DD/YYYY"))
 
+        let newPointsId
         // Posting informatin about 
-        EmotionManager.post(emotionCardInfo)
         PointsManager.post(number)
-            .then(() => props.history.push("/emotionList"))
+            .then((response) => {
+                newPointsId = response.id
+                emotionCardInfo["groupPointsId"] = newPointsId
+                console.log(emotionCardInfo)
+                props.history.push("/emotionsList")
+                EmotionManager.post(emotionCardInfo)
+
+            })
     }
 
     useEffect(() => {

@@ -3,7 +3,34 @@ import React from "react";
 
 const EmotionCard = (props) => {
     return (
-        <h2>Emotion Card</h2>
+        <section>
+            <div className="dataManipulation">
+                <div>
+                    {props.card.date}
+                </div>
+
+                <div>
+
+                </div>
+                <div>
+
+                </div>
+            </div>
+
+            <div className="wordOfWisdom">
+                <div>
+
+                </div>
+            </div>
+
+            <div className="scorePoints">
+                <div>
+
+                </div>
+            </div>
+        
+        </section>
+        
     )
 }
 
