@@ -1,80 +1,160 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "username": "Nick",
-            "password": "123"
-        }
-    ],
-    "points": [
-        {
-            "id": 1,
-            "cardSentence": "Do you feel angry today?",
-            "cardPoints": 0,
-            "userId": 1
-        },
-        {
-            "id": 2,
-            "cardSentence": "Do you feel sad this week?",
-            "cardPoints": 0,
-            "userId": 1
-        },
-        {
-            "id": 3,
-            "cardSentence": "Have you not been in contact with people in the last week?",
-            "cardPoints": 0,
-            "userId": 1
-        },
-        {
-            "id": 4,
-            "cardSentence": "Lately, have you felt scared?",
-            "cardPoints": 0,
-            "userId": 1
-        },
-        {
-            "id": 5,
-            "cardSentence": "Have you felt like giving up on a problem lately?",
-            "cardPoints": 0,
-            "userId": 1
-        },
-        {
-            "id": 6,
-            "cardSentence": "In the last week do you believe you have been supported by others?",
-            "cardPoints": 0,
-            "userId": 1
-        },
-        {
-            "id": 7,
-            "cardSentence": "Have others put you down this week?",
-            "cardPoints": 0,
-            "userId": 1
-        },
-        {
-            "id": 8,
-            "cardSentence": "Do you feel like your ideas are not being accepted?",
-            "cardPoints": 0,
-            "userId": 1
-        },
-        {
-            "id": 9,
-            "cardSentence": "Lately, Have you believed that your ideas are not taken into consideration?",
-            "cardPoints": 0,
-            "userId": 1
-        },
-        {
-            "id": 10,
-            "cardSentence": "Have you been more negative than positive of late?",
-            "cardPoints": 0,
-            "userId": 1
-        }
-    ],
-    "cards": [
-        {
-            "id": 1,
-            "encouragingWords": "",
-            "totalPoints": 0,
-            "date": "01/02/20",
-            "userId": 1
-        }
-    ]
+  "users": [
+    {
+      "id": 1,
+      "username": "Nick",
+      "password": "123"
+    }
+  ],
+  "points": [
+    {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "id": 1
+    },
+    {
+      "1": 8,
+      "2": 3,
+      "3": 4,
+      "4": 7,
+      "5": 7,
+      "6": 4,
+      "7": 2,
+      "8": 9,
+      "9": 8,
+      "10": 7,
+      "id": 2
+    },
+    {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 4,
+      "6": 3,
+      "7": 5,
+      "8": 5,
+      "9": 9,
+      "10": 5,
+      "id": 3
+    },
+    {
+      "1": 10,
+      "2": 10,
+      "3": 10,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "id": 4
+    },
+    {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "id": 5
+    },
+    {
+      "1": 10,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "id": 6
+    }
+  ],
+  "cardForm": [
+    {
+      "id": 1,
+      "cardSentence": "Do you feel angry today?",
+      "cardPoints": 0,
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "cardSentence": "Do you feel sad this week?",
+      "cardPoints": 0,
+      "userId": 1
+    },
+    {
+      "id": 3,
+      "cardSentence": "Have you not been in contact with people in the last week?",
+      "cardPoints": 0,
+      "userId": 1
+    },
+    {
+      "id": 4,
+      "cardSentence": "Lately, have you felt scared?",
+      "cardPoints": 0,
+      "userId": 1
+    },
+    {
+      "id": 5,
+      "cardSentence": "Have you felt like giving up on a problem lately?",
+      "cardPoints": 0,
+      "userId": 1
+    },
+    {
+      "id": 6,
+      "cardSentence": "In the last week do you believe you have been supported by others?",
+      "cardPoints": 0,
+      "userId": 1
+    },
+    {
+      "id": 7,
+      "cardSentence": "Have others put you down this week?",
+      "cardPoints": 0,
+      "userId": 1
+    },
+    {
+      "id": 8,
+      "cardSentence": "Do you feel like your ideas are not being accepted?",
+      "cardPoints": 0,
+      "userId": 1
+    },
+    {
+      "id": 9,
+      "cardSentence": "Lately, Have you believed that your ideas are not taken into consideration?",
+      "cardPoints": 0,
+      "userId": 1
+    },
+    {
+      "id": 10,
+      "cardSentence": "Have you been more negative than positive of late?",
+      "cardPoints": 0,
+      "userId": 1
+    }
+  ],
+  "cards": [
+    {
+      "id": 1,
+      "encouragingWords": "",
+      "totalPoints": 0,
+      "date": "01/02/20",
+      "userId": 1
+    }
+  ]
 }

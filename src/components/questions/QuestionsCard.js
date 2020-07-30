@@ -2,9 +2,7 @@
 import React, {useState} from "react";
 
 
-const QuestionCard = (props) => {
-
-    
+const QuestionCard = (props) => {   
    
     return (
         <fieldset>
