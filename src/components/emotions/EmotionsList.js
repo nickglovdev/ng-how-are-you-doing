@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import EmotionsCard from "./EmotionsCard"
 import EmotionManager from '../../modules/EmotionManager';
+import PointsManager from '../../modules/PointsManager'
 
 const EmotionList = (props) => {
   const [cards, setCard] = useState([]);
+  const [points, setPoints] = useState([])
 
   const getEmotionCard = () => {
     return EmotionManager.getAll().then(allEmotionCards => {
@@ -11,11 +13,20 @@ const EmotionList = (props) => {
     });
   };
 
-//   const deleteTask = id => {
-//     TaskManager.delete(id)
-//       .then(() => TaskManager.getAll()
-//         .then(setTask));
-//   };
+  const deleteFunction = id => {
+    const deleteEmotions = id => {
+      EmotionManager.delete(id)
+        .then(() => EmotionManager.getAll()
+          .then(setCard));
+    };
+    const deletePoints = id => {
+      PointsManager.delete(id)
+        .then(() => EmotionManager.getAll()
+          .then(setPoints))
+    }
+    deleteEmotions(id)
+    deletePoints(id)
+  }
 
   useEffect(() => {
     getEmotionCard();
@@ -25,12 +36,12 @@ const EmotionList = (props) => {
 
   return (
     <div>
-        <h2>Emotion Cards</h2>
+      <h2>Emotion Cards</h2>
       <div className="container-cards">
         {cards.map(card => <EmotionsCard
           key={card.id}
           card={card}
-        //   deleteTask={deleteTask}
+          deleteFunction={deleteFunction}
           {...props} />)}
 
       </div>

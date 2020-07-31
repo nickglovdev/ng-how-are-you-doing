@@ -16,4 +16,9 @@ export default {
           body: JSON.stringify(newQuestion)
         }).then(data => data.json())
       },
+      delete(id) {
+        return fetch(`${remoteURL}/cards/${id}`, {
+          method: "DELETE"
+        }).then(result => result.json())
+      }
 }

@@ -13,19 +13,19 @@ const EmotionCard = (props) => {
                     <button>Edit</button>
                 </div>
                 <div>
-                    <button>Delete</button>
+                    <button type="button" onClick={() => props.deleteFunction(props.card.id)}>Delete</button>
                 </div>
             </div>
 
             <div className="wordOfWisdom">
                 <div>
-                    The day is not set
+                    The day is not set INSPIRE!
                 </div>
             </div>
 
             <div className="scorePoints">
                 <div>
-                    {props.card.totalPoints}
+                    Total Points: {props.card.totalPoints}
                 </div>
             </div>
         
