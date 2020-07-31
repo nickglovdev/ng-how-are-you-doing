@@ -10,22 +10,22 @@ const EmotionCard = (props) => {
                 </div>
 
                 <div>
-
+                    <button>Edit</button>
                 </div>
                 <div>
-
+                    <button>Delete</button>
                 </div>
             </div>
 
             <div className="wordOfWisdom">
                 <div>
-
+                    The day is not set
                 </div>
             </div>
 
             <div className="scorePoints">
                 <div>
-
+                    {props.card.totalPoints}
                 </div>
             </div>
         
