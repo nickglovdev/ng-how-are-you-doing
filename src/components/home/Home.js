@@ -6,8 +6,8 @@ const Home = () => {
   return (
     <>
       <div className="home">
-        <Link to="/questionslist"><button type="button"> Emotion Questions</button></Link>
-        <Link to="/emotionslist"><button type="button"> Emotion Cards</button></Link>
+        <Link to="/questions"><button type="button"> Emotion Questions</button></Link>
+        <Link to="/emotions"><button type="button"> Emotion Cards</button></Link>
       </div>
     </>
   )

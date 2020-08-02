@@ -10,7 +10,7 @@ const EmotionCard = (props) => {
                 </div>
 
                 <div>
-                    <button>Edit</button>
+                    <button type="button" onClick={() =>props.history.push(`/emotions/${props.card.id}/edit`)}>Edit</button>
                 </div>
                 <div>
                     <button type="button" onClick={() => props.deleteFunction(props.card.id)}>Delete</button>

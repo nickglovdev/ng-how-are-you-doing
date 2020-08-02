@@ -8,8 +8,8 @@ import EmotionManager from '../../modules/EmotionManager';
 
 const QuestionsList = (props) => {
     const [questions, setQuestion] = useState([])
-    const [number, setNumber] = useState({ "1": "0", "2": "0", "3": "0", "4": "0", "5": "0", "6": "0", "7": "0", "8": "0", "9": "0", "10": "0" })
-    const [emotionCardInfo] = useState({ "totalPoints": 0, "date": "", "groupPointsId": "" })
+    const [number, setNumber] = useState({ 1: "0", 2: "0", 3: "0", 4: "0", 5: "0", 6: "0", 7: 0, 8: "0", 9: "0", 10: "0" })
+    const [emotionCardInfo] = useState({ "totalPoints": 0, "date": "", "groupPointsId": 0 })
 
     const getQuestion = () => {
         return QuestionsManager.getAll()
@@ -53,7 +53,7 @@ const QuestionsList = (props) => {
                 newPointsId = response.id
                 emotionCardInfo["groupPointsId"] = newPointsId
                 console.log(emotionCardInfo)
-                props.history.push("/emotionsList")
+                props.history.push("/emotions")
                 EmotionManager.post(emotionCardInfo)
 
             })

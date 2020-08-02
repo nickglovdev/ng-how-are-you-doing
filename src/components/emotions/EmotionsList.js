@@ -12,7 +12,7 @@ const EmotionList = (props) => {
       setCard(allEmotionCards)
     });
   };
-
+  // Group of Delete Functions that will delete out the tables for points and emotion cards.
   const deleteFunction = id => {
     const deleteEmotions = id => {
       EmotionManager.delete(id)
