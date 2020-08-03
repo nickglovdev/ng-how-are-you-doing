@@ -9,28 +9,29 @@ import moment from 'moment';
 // Setting up the field change of all of the dropdowns. They will go into a object.
 
 const EmotionEditForm = (props) => {
-    const [questions, setQuestion] = useState([])
-    const [number, setNumber] = useState({ 1: "", 2: "", 3: "", 4: "", 5: "", 6: "", 7: "", 8: "", 9: "", 10: "", numberId: "" })
+    const [points, setPoints] = useState({ 1: "", 2: "", 3: "", 4: "", 5: "", 6: "", 7: "", 8: "", 9: "", 10: ""})
     const [isLoading, setIsLoading] = useState(false);
-    const [emotionCardInfo] = useState({ "totalPoints": 0, "date": "", "groupPointsId": 0 })
+    const [cardForm, setCardForm] = useState({ "totalPoints": 0, "date": "", "pointsId": 0, "cardFormId": "" })
 
     const fieldChange = evt => {
-        const stateToChange = { ...number }
+        const stateToChange = { ...points }
         stateToChange[evt.target.id] = evt.target.value;
-        setNumber(stateToChange);
+        setPoints(stateToChange);
 
         const updateExistingPoints = evt => {
             evt.preventDefault()
             setIsLoading(true);
  
             const editedpoints = {
-                id: props.match.params.emotionsId,
-                number: parseInt(number.numberId),
-                groupPointsId: parseInt(emotionCardInfo.groupPointsId)
+                id: props.match.params.pointsId,
+                points: parseInt(points.pointsId),
+                cardFormId: parseInt(cardForm.pointsId)
             };
         }
  
     }
+
+    
 }
 
 export default EmotionEditForm

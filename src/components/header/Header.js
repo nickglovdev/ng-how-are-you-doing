@@ -7,7 +7,7 @@ const Header = (props) => {
         <header>
             <section>
                 <div>
-                    <h2>{localStorage.getItem('user').replace(/['"]+/g, '')}</h2>
+                    {/* <h2>{localStorage.getItem('user').replace(/['"]+/g, '')}</h2> */}
                 </div>
                 <div>
                     <h3><Moment format="MM/DD/YYYY">{props.date}</Moment></h3>

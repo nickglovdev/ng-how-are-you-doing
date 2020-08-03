@@ -24,12 +24,13 @@ const QuestionsList = (props) => {
                 setQuotes(allQuotes)
             })
     }
-    console.log(quotes.content)
+    
     // Setting up the field change of all of the dropdowns. They will go into a object.
     const fieldChange = evt => {
         const stateToChange = { ...number }
         stateToChange[evt.target.id] = evt.target.value;
         setNumber(stateToChange);
+    
     }
 
     // Creating new Card
