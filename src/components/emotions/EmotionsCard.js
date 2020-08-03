@@ -19,7 +19,7 @@ const EmotionCard = (props) => {
 
             <div className="wordOfWisdom">
                 <div>
-                    The day is not set INSPIRE!
+                   
                 </div>
             </div>
 

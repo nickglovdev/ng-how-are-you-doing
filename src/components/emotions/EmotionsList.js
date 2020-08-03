@@ -6,12 +6,14 @@ import PointsManager from '../../modules/PointsManager'
 const EmotionList = (props) => {
   const [cards, setCard] = useState([]);
   const [points, setPoints] = useState([])
+  const [quotes, setQuotes] = useState([])
 
   const getEmotionCard = () => {
     return EmotionManager.getAll().then(allEmotionCards => {
       setCard(allEmotionCards)
     });
   };
+
   // Group of Delete Functions that will delete out the tables for points and emotion cards.
   const deleteFunction = id => {
     const deleteEmotions = id => {
@@ -30,21 +32,26 @@ const EmotionList = (props) => {
 
   useEffect(() => {
     getEmotionCard();
+    
   }, []);
 
 
 
   return (
+    
     <div>
+
       <h2>Emotion Cards</h2>
+
       <div className="container-cards">
         {cards.map(card => <EmotionsCard
           key={card.id}
           card={card}
           deleteFunction={deleteFunction}
           {...props} />)}
-
+      
       </div>
+      
     </div>
   );
 };
