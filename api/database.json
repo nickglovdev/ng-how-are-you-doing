@@ -65,7 +65,7 @@
     {
       "totalPoints": 75,
       "date": "08/03/2020",
-      "userid": 2,
+      "userId": 2,
       "quote": "What you get by achieving your goals is not as important as what you become by achieving your goals.",
       "author": "Zig Ziglar",
       "id": 2
@@ -73,7 +73,7 @@
     {
       "totalPoints": 0,
       "date": "08/03/2020",
-      "userid": 2,
+      "userId": 2,
       "quote": "Accept the challenges so that you can feel the exhilaration of victory.",
       "author": "George S. Patton",
       "id": 3
@@ -85,6 +85,14 @@
       "quote": "Look up at the stars and not down at your feet. Try to make sense of what you see, and wonder about what makes the universe exist. Be curious.",
       "author": "Stephen Hawking",
       "id": 4
+    },
+    {
+      "totalPoints": 12,
+      "date": "08/04/2020",
+      "userId": 1,
+      "quote": "Do the one thing you think you cannot do. Fail at it. Try again. Do better the second time. The only people who never tumble are those who never mount the high wire. This is your moment. Own it.",
+      "author": "Oprah Winfrey",
+      "id": 5
     }
   ]
 }
