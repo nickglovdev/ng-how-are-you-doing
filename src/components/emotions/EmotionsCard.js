@@ -8,18 +8,14 @@ const EmotionCard = (props) => {
                 <div>
                     {props.card.date}
                 </div>
-
                 <div>
-                    <button type="button" onClick={() =>props.history.push(`/emotions/${props.card.id}/edit`)}>Edit</button>
-                </div>
-                <div>
-                    <button type="button" onClick={() => props.deleteFunction(props.card.id)}>Delete</button>
+                    <button type="button" onClick={() => props.deleteEmotions(props.card.id)}>Delete</button>
                 </div>
             </div>
 
             <div className="wordOfWisdom">
                 <div>
-                   
+                   {props.card.quote} - {props.card.author}
                 </div>
             </div>
 

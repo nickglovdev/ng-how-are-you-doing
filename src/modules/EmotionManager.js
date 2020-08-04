@@ -2,13 +2,13 @@ const remoteURL = "http://localhost:5002"
 
 export default {
   get(id) {
-    return fetch(`${remoteURL}/cardForm/${id}`).then(result => result.json())
+    return fetch(`${remoteURL}/emotionCards/${id}`).then(result => result.json())
   },
   getAll() {
-    return fetch(`${remoteURL}/cardForm`).then(result => result.json())
+    return fetch(`${remoteURL}/emotionCards`).then(result => result.json())
   },
   post(newQuestion) {
-    return fetch(`${remoteURL}/cardForm`, {
+    return fetch(`${remoteURL}/emotionCards`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -17,7 +17,7 @@ export default {
     }).then(data => data.json())
   },
   delete(id) {
-    return fetch(`${remoteURL}/cardForm/${id}`, {
+    return fetch(`${remoteURL}/emotionCards/${id}`, {
       method: "DELETE"
     }).then(result => result.json())
   }
