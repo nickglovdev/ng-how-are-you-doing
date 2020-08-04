@@ -24,7 +24,7 @@ const Login = props => {
           localStorage.user = loggedUser
           props.history.push("/");
         } else {
-          alert("Password of Username is Wrong")
+          alert("Password or Username is Wrong")
         }
       })
     })
