@@ -9,16 +9,16 @@ const HowAreYouDoing = () => {
 
     // Hold on to hasUser value
   // Make sure it has a value
-  const isAuthenticated = () => sessionStorage.getItem("credentials") !== null;
+  const isAuthenticated = () => localStorage.getItem("credentials") !== null;
   // Is to change to whether they are logged in
   const [hasUser, setHasUser] = useState(isAuthenticated());
   // Sets a user to pass in a user
   const setUser = user => {
-    sessionStorage.setItem("credentials", JSON.stringify(user));
+    localStorage.setItem("credentials", JSON.stringify(user));
     setHasUser(isAuthenticated());
   };
   const clearUser = () => {
-    sessionStorage.clear();
+    localStorage.clear();
     setHasUser(isAuthenticated());
   }
     return (

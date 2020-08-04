@@ -5,18 +5,18 @@
       "username": "Nick",
       "password": "123",
       "email": "nick@gmail.com",
-      "Twitter": "https://twitter.com/nickglovdev",
-      "Facebook": "https://www.facebook.com/nick.glover.982",
-      "Linkedin": "https://www.linkedin.com/in/nicholasdwglover/"
+      "twitter": "https://twitter.com/nickglovdev",
+      "facebook": "https://www.facebook.com/nick.glover.982",
+      "linkedin": "https://www.linkedin.com/in/nicholasdwglover/"
     },
     {
       "id": 2,
       "username": "Dan",
       "password": "123",
       "email": "dan@gmail.com",
-      "Twitter": "https://twitter.com/danglovdev",
-      "Facebook": "https://www.facebook.com/dan.glover.982",
-      "Linkedin": "https://www.linkedin.com/in/dandwglover/"
+      "twitter": "https://twitter.com/danglovdev",
+      "facebook": "https://www.facebook.com/dan.glover.982",
+      "linkedin": "https://www.linkedin.com/in/dandwglover/"
     }
   ],
   "cardSentences": [
@@ -65,7 +65,7 @@
     {
       "totalPoints": 75,
       "date": "08/03/2020",
-      "userid": "2",
+      "userid": 2,
       "quote": "What you get by achieving your goals is not as important as what you become by achieving your goals.",
       "author": "Zig Ziglar",
       "id": 2
@@ -73,7 +73,7 @@
     {
       "totalPoints": 0,
       "date": "08/03/2020",
-      "userid": "2",
+      "userid": 2,
       "quote": "Accept the challenges so that you can feel the exhilaration of victory.",
       "author": "George S. Patton",
       "id": 3
@@ -81,7 +81,7 @@
     {
       "totalPoints": 4,
       "date": "08/04/2020",
-      "userId": "1",
+      "userId": 1,
       "quote": "Look up at the stars and not down at your feet. Try to make sense of what you see, and wonder about what makes the universe exist. Be curious.",
       "author": "Stephen Hawking",
       "id": 4

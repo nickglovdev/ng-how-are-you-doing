@@ -5,6 +5,7 @@ import Home from "./home/Home"
 import QuestionsList from "./questions/QuestionsList"
 import EmotionsList from "./emotions/EmotionsList"
 import ProfilesList from "./profiles/ProfilesList"
+import ProfileEditForm from "./profiles/ProfileEditForm"
 
 const ApplicationViews = (props) => {
     const hasUser = props.hasUser;
@@ -41,9 +42,13 @@ const ApplicationViews = (props) => {
                 }
             }} />
 
-            {/* <Route path="/emotions/:emotionsId(\d+)/edit" render={props => {
-                return <EmotionsEditForm {...props} />
-            }} /> */}
+            <Route path="/profiles/:profileId(\d+)/edit" render={props => {
+                if (hasUser) {
+                    return <ProfileEditForm {...props} />
+                } else {
+                    return <Redirect to="/login" />
+                }
+            }} />
         </React.Fragment>
     )
 }
