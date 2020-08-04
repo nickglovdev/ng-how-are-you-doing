@@ -29,5 +29,10 @@ export default {
       },
       body: JSON.stringify(editedAnimal)
     }).then(data => data.json());
+  },
+  getUser() {
+    console.log(localStorage.getItem("id"))
+    return fetch(`${remoteURL}/profiles?id=${localStorage.getItem("id")}`)
+    .then(res=>res.json())
   }
 }

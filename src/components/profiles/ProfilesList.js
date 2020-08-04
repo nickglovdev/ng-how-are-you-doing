@@ -7,8 +7,8 @@ const ProfilesList = (props) => {
   const [profiles, setProfiles] = useState([]);
 
   const getEmotionCard = () => {
-    return ProfileManager.getAll().then(allProfileCards => {
-      setProfiles(allProfileCards)
+    return ProfileManager.getUser().then(profileCard => {
+      setProfiles(profileCard)
     });
   };
 
