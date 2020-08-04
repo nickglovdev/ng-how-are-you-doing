@@ -77,6 +77,14 @@
       "quote": "Accept the challenges so that you can feel the exhilaration of victory.",
       "author": "George S. Patton",
       "id": 3
+    },
+    {
+      "totalPoints": 4,
+      "date": "08/04/2020",
+      "userId": "1",
+      "quote": "Look up at the stars and not down at your feet. Try to make sense of what you see, and wonder about what makes the universe exist. Be curious.",
+      "author": "Stephen Hawking",
+      "id": 4
     }
   ]
 }

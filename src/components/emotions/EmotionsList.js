@@ -19,14 +19,11 @@ const EmotionList = (props) => {
           .then(setCard));
     };
     
-   
 
   useEffect(() => {
     getEmotionCard();
     
   }, []);
-
-
 
   return (
     

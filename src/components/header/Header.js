@@ -22,7 +22,8 @@ const Header = (props) => {
                 <nav>
                     <ul>
                         <li><Link to="/questions">Emotion Questions</Link></li>
-                        <li><Link to="/emotions"> Emotion Cards</Link></li>
+                        <li><Link to="/emotions">Emotion Cards</Link></li>
+                        <li><Link to="/profiles">Profile Info</Link></li>
                     </ul>
                 </nav>
             </section>

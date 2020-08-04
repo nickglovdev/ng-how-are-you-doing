@@ -13,6 +13,9 @@ const Login = props => {
   const handleLogin = (e) => {
     e.preventDefault();
 
+    props.setUser(credentials)
+    props.history.push("/");
+
     //Find all users
     LoginManager.getAll()
     .then(usernames => {
