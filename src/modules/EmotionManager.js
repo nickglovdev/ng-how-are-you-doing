@@ -23,5 +23,10 @@ export default {
   },
   getEmotionById(id) {
     return fetch(`${remoteURL}/emotionCards?userId=${id}`).then(result => result.json())
+  },
+  deleteById(id) {
+    return fetch(`${remoteURL}/emotionCards/${id}`, {
+      method: "DELETE"
+    }).then(result => result.json())
   }
 }

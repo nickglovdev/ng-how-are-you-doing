@@ -11,6 +11,7 @@ const QuestionsList = (props) => {
     const [quotes, setQuotes] = useState([])
     const [number, setNumber] = useState({ 1: "0", 2: "0", 3: "0", 4: "0", 5: "0", 6: "0", 7: 0, 8: "0", 9: "0", 10: "0" })
     const [emotionCardInfo] = useState({ "totalPoints": 0, "date": "", "userId": 0, "quote": "", "author": "" })
+    const [isLoading, setIsLoading] = useState(false);
 
     const getQuestion = () => {
         return QuestionsManager.getAll()
@@ -37,6 +38,7 @@ const QuestionsList = (props) => {
     const buildingOutEmotionCard = evt => {
         evt.preventDefault();
         
+        setIsLoading(true)
         // Turning all dropdown returns into int.
         number[1] = parseInt(number[1])
         number[2] = parseInt(number[2])
@@ -60,7 +62,7 @@ const QuestionsList = (props) => {
        
         // Posting informatin about emotion cards
         EmotionManager.post(emotionCardInfo)
-        .then(props.history.push("/emotions"))
+        .then(() => props.history.push("/emotions"))
 
         
     }
@@ -80,7 +82,7 @@ const QuestionsList = (props) => {
                     {...props} />
                 )}
             </form>
-            <button type="button" onClick={buildingOutEmotionCard}>Submit</button>
+            <button type="button" disabled={isLoading} onClick={buildingOutEmotionCard}>Submit</button>
         </div>
     )
 

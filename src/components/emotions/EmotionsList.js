@@ -7,8 +7,7 @@ const EmotionList = (props) => {
   const [cards, setCard] = useState([]);
   const currentUser = localStorage.getItem("id")
   const getEmotionCard = () => {
-    console.log(props)
-     EmotionManager.getEmotionById(currentUser).then(allEmotionCards => {
+     return EmotionManager.getEmotionById(currentUser).then(allEmotionCards => {
       setCard(allEmotionCards)
     });
   };
@@ -16,7 +15,7 @@ const EmotionList = (props) => {
   // Group of Delete Functions that will delete out the tables for points and emotion cards.
     const deleteEmotions = id => {
       EmotionManager.delete(id)
-        .then(() => EmotionManager.getAll()
+        .then(() => EmotionManager.getEmotionById(currentUser)
           .then(setCard));
     };
     

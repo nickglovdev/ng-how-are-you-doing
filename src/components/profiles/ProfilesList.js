@@ -16,7 +16,6 @@ const ProfilesList = (props) => {
     getEmotionCard();
     
   }, []);
-  console.log(profiles)
   return (
     
     <div>

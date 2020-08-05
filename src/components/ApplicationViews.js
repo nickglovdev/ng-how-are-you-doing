@@ -9,15 +9,16 @@ import ProfileEditForm from "./profiles/ProfileEditForm"
 
 const ApplicationViews = (props) => {
     const hasUser = props.hasUser;
-    const setUser = props.setUser; // checks to see if user is logged in
     console.log(hasUser)
+    const setUser = props.setUser; // checks to see if user is logged in
+    
     return (
         <React.Fragment>
             <Route path="/login" render={props => {
                 return <Login setUser={setUser} {...props} />
             }} />
             <Route exact path="/" render={props => { return <Home /> }} />
-
+            
             <Route exact path="/questions" render={props => {
                 if (hasUser) {
                     return <QuestionsList {...props} />
