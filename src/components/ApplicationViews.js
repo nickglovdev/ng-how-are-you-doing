@@ -2,6 +2,7 @@ import { Route, Redirect } from "react-router-dom"
 import React from "react"
 import Login from "./login/Login"
 import Home from "./home/Home"
+import Registration from "./login/Registration"
 import QuestionsList from "./questions/QuestionsList"
 import EmotionsList from "./emotions/EmotionsList"
 import ProfilesList from "./profiles/ProfilesList"
@@ -16,8 +17,12 @@ const ApplicationViews = (props) => {
             <Route path="/login" render={props => {
                 return <Login setUser={setUser} {...props} />
             }} />
-            <Route exact path="/" render={props => { return <Home /> }} />
             
+            <Route exact path="/registration" render={props => {
+                return <Registration setUser={setUser} {...props} />
+            }} />
+
+            <Route exact path="/" render={props => { return <Login /> }} />
             <Route exact path="/questions" render={props => {
                 if (hasUser) {
                     return <QuestionsList {...props} />

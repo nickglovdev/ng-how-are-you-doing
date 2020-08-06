@@ -55,7 +55,7 @@ const QuestionsList = (props) => {
         const dropdownCalculation = obj => Object.values(obj).reduce((a, b) => a + b);
         emotionCardInfo["totalPoints"] = dropdownCalculation(number)
         emotionCardInfo["date"] = (moment(new Date()).format("MM/DD/YYYY"))
-        emotionCardInfo["userId"] = parseInt(localStorage.getItem('id'))
+        emotionCardInfo["userId"] = parseInt(sessionStorage.getItem('id'))
         emotionCardInfo["quote"] = quotes.content
         emotionCardInfo["author"] = quotes.author
 

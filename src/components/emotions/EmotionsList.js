@@ -5,7 +5,7 @@ import EmotionManager from '../../modules/EmotionManager';
 
 const EmotionList = (props) => {
   const [cards, setCard] = useState([]);
-  const currentUser = localStorage.getItem("id")
+  const currentUser = sessionStorage.getItem("id")
   const getEmotionCard = () => {
      return EmotionManager.getEmotionById(currentUser).then(allEmotionCards => {
       setCard(allEmotionCards)

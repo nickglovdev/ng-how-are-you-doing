@@ -28,8 +28,8 @@ const Login = props => {
         } else {
           const loggedUser = ("credintials", JSON.stringify(credentials.user))
           const userloggingId = ("activeUser", users.id)
-          localStorage.id = userloggingId
-          localStorage.user = loggedUser
+          sessionStorage.id = userloggingId
+          sessionStorage.user = loggedUser
           props.history.push("/")
         }
       })
@@ -53,6 +53,7 @@ const Login = props => {
             required="" />
         </div>
         <button type="submit">Sign in</button>
+        <button type="button"  onClick={() => props.history.push(`/registration`)}>Register</button>
       </fieldset>
     </form>
   );

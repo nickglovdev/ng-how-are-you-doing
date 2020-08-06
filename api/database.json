@@ -17,6 +17,16 @@
       "twitter": "https://twitter.com/danglovdev",
       "facebook": "https://www.facebook.com/dan.glover.982",
       "linkedin": "https://www.linkedin.com/in/dandwglover/"
+    },
+    {
+      "username": "John",
+      "password": "123",
+      "rePassword": "123",
+      "email": "john@john.com",
+      "twitter": "twitter",
+      "facebook": "linkedin",
+      "linkedin": "facebook",
+      "id": 3
     }
   ],
   "cardSentences": [
@@ -101,6 +111,22 @@
       "quote": "Optimism is the faith that leads to achievement. Nothing can be done without hope and confidence.",
       "author": "Helen Keller",
       "id": 8
+    },
+    {
+      "totalPoints": 30,
+      "date": "08/06/2020",
+      "userId": 8,
+      "quote": "Learning is the beginning of wealth. Learning is the beginning of health. Learning is the beginning of spirituality. Searching and learning is where the miracle process all begins.",
+      "author": "Jim Rohn",
+      "id": 9
+    },
+    {
+      "totalPoints": 62,
+      "date": "08/06/2020",
+      "userId": 1,
+      "quote": "The more man meditates upon good thoughts, the better will be his world and the world at large.",
+      "author": "Confucius",
+      "id": 10
     }
   ]
 }

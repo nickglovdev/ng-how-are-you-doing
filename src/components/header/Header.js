@@ -8,9 +8,6 @@ const Header = (props) => {
         <header>
             <section>
                 <div>
-                    {/* <h2>{localStorage.getItem('user').replace(/['"]+/g, '')}</h2> */}
-                </div>
-                <div>
                     <h3><Moment format="MM/DD/YYYY">{props.date}</Moment></h3>
                 </div>
             </section>
@@ -24,6 +21,7 @@ const Header = (props) => {
                         <li><Link to="/questions">Emotion Questions</Link></li>
                         <li><Link to="/emotions">Emotion Cards</Link></li>
                         <li><Link to="/profiles">Profile Info</Link></li>
+                        <li><Link  onClick={() => sessionStorage.clear()} to="/login">Logout</Link></li>
                     </ul>
                 </nav>
             </section>
