@@ -40,7 +40,7 @@ const Registration= (props) => {
                                 sessionStorage.clear();
                                 sessionStorage.id = user.id
                                 sessionStorage.user = user.username
-                                props.history.push("/login")
+                                props.history.push("/profiles")
                             })
                     }
                 })
@@ -53,7 +53,7 @@ const Registration= (props) => {
                 <form>
                     <fieldset>
                         <div className="formgrid">
-                        <label htmlFor="username">Username:</label>
+                        <label htmlFor="username">*Username:</label>
                             <input
                                 type="text"
                                 required
@@ -62,7 +62,7 @@ const Registration= (props) => {
                                 id="username"
                                 value={credentials.username}
                             />
-                            <label htmlFor="password">Password:</label>
+                            <label htmlFor="password">*Password:</label>
                             <input
                                 type="password"
                                 required
@@ -71,7 +71,7 @@ const Registration= (props) => {
                                 id="password"
                                 value={credentials.password}
                             />
-                            <label htmlFor="password">Re Enter Password:</label>
+                            <label htmlFor="password">*Re Enter Password:</label>
                             <input
                                 type="password"
                                 required

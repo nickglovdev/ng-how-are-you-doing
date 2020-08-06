@@ -27,6 +27,25 @@
       "facebook": "linkedin",
       "linkedin": "facebook",
       "id": 3
+    },
+    {
+      "id": 4,
+      "username": "Jim",
+      "password": "123",
+      "email": "falfj@flasf.com",
+      "twitter": "https://twitter.com/jimGlover",
+      "facebook": "https://www.facebook.com/jim",
+      "linkedin": "https://www.linkedin.com/in/jim/"
+    },
+    {
+      "username": "Test",
+      "password": "123",
+      "rePassword": "123",
+      "email": "falfj@flasf.com",
+      "twitter": "twitteeerrrr",
+      "facebook": "linkedinnnn",
+      "linkedin": "facebookkkk",
+      "id": 5
     }
   ],
   "cardSentences": [
@@ -127,6 +146,14 @@
       "quote": "The more man meditates upon good thoughts, the better will be his world and the world at large.",
       "author": "Confucius",
       "id": 10
+    },
+    {
+      "totalPoints": 23,
+      "date": "08/06/2020",
+      "userId": 4,
+      "quote": "Do the one thing you think you cannot do. Fail at it. Try again. Do better the second time. The only people who never tumble are those who never mount the high wire. This is your moment. Own it.",
+      "author": "Oprah Winfrey",
+      "id": 11
     }
   ]
 }

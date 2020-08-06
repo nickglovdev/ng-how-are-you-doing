@@ -22,7 +22,8 @@ const ApplicationViews = (props) => {
                 return <Registration setUser={setUser} {...props} />
             }} />
 
-            <Route exact path="/" render={props => { return <Login /> }} />
+            <Route exact path="/" render={props => {
+                 return <Login setUser={setUser} {...props} /> }} />
             <Route exact path="/questions" render={props => {
                 if (hasUser) {
                     return <QuestionsList {...props} />

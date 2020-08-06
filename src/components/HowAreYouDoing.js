@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import ApplicationViews from "./ApplicationViews"
-import "./HowAreYouDoing.css"
 import Header from "./header/Header"
-
-
+import "./HowAreYouDoing.css"
 
 const HowAreYouDoing = () => {
 
@@ -23,7 +21,7 @@ const HowAreYouDoing = () => {
   }
     return (
         <>
-            <Header hasUser={hasUser} clearUser={clearUser} />
+            <Header />
             <ApplicationViews hasUser={hasUser} setUser={setUser} />
         </>
     )
