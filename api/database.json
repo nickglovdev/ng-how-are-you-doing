@@ -17,35 +17,6 @@
       "twitter": "https://twitter.com/danglovdev",
       "facebook": "https://www.facebook.com/dan.glover.982",
       "linkedin": "https://www.linkedin.com/in/dandwglover/"
-    },
-    {
-      "username": "John",
-      "password": "123",
-      "rePassword": "123",
-      "email": "john@john.com",
-      "twitter": "twitter",
-      "facebook": "linkedin",
-      "linkedin": "facebook",
-      "id": 3
-    },
-    {
-      "id": 4,
-      "username": "Jim",
-      "password": "123",
-      "email": "falfj@flasf.com",
-      "twitter": "https://twitter.com/jimGlover",
-      "facebook": "https://www.facebook.com/jim",
-      "linkedin": "https://www.linkedin.com/in/jim/"
-    },
-    {
-      "username": "Test",
-      "password": "123",
-      "rePassword": "123",
-      "email": "falfj@flasf.com",
-      "twitter": "twitteeerrrr",
-      "facebook": "linkedinnnn",
-      "linkedin": "facebookkkk",
-      "id": 5
     }
   ],
   "cardSentences": [
@@ -98,62 +69,6 @@
       "quote": "What you get by achieving your goals is not as important as what you become by achieving your goals.",
       "author": "Zig Ziglar",
       "id": 2
-    },
-    {
-      "totalPoints": 0,
-      "date": "08/03/2020",
-      "userId": 2,
-      "quote": "Accept the challenges so that you can feel the exhilaration of victory.",
-      "author": "George S. Patton",
-      "id": 3
-    },
-    {
-      "totalPoints": 40,
-      "date": "08/05/2020",
-      "userId": 1,
-      "quote": "Consult not your fears but your hopes and your dreams. Think not about your frustrations, but about your unfulfilled potential. Concern yourself not with what you tried and failed in, but with what it is still possible for you to do.",
-      "author": "Pope John XXIII",
-      "id": 5
-    },
-    {
-      "totalPoints": 20,
-      "date": "08/05/2020",
-      "userId": 1,
-      "quote": "The key is to keep company only with people who uplift you, whose presence calls forth your best.",
-      "author": "Epictetus",
-      "id": 7
-    },
-    {
-      "totalPoints": 6,
-      "date": "08/05/2020",
-      "userId": 2,
-      "quote": "Optimism is the faith that leads to achievement. Nothing can be done without hope and confidence.",
-      "author": "Helen Keller",
-      "id": 8
-    },
-    {
-      "totalPoints": 30,
-      "date": "08/06/2020",
-      "userId": 8,
-      "quote": "Learning is the beginning of wealth. Learning is the beginning of health. Learning is the beginning of spirituality. Searching and learning is where the miracle process all begins.",
-      "author": "Jim Rohn",
-      "id": 9
-    },
-    {
-      "totalPoints": 62,
-      "date": "08/06/2020",
-      "userId": 1,
-      "quote": "The more man meditates upon good thoughts, the better will be his world and the world at large.",
-      "author": "Confucius",
-      "id": 10
-    },
-    {
-      "totalPoints": 23,
-      "date": "08/06/2020",
-      "userId": 4,
-      "quote": "Do the one thing you think you cannot do. Fail at it. Try again. Do better the second time. The only people who never tumble are those who never mount the high wire. This is your moment. Own it.",
-      "author": "Oprah Winfrey",
-      "id": 11
     }
   ]
 }

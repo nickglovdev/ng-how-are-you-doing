@@ -36,8 +36,8 @@ const Registration= (props) => {
                      } else {
                        LoginManager.post(credentials)
                             .then(user => {
-                                console.log(user)
                                 sessionStorage.clear();
+                                props.setUser(credentials)
                                 sessionStorage.id = user.id
                                 sessionStorage.user = user.username
                                 props.history.push("/profiles")
