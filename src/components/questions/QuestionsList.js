@@ -10,7 +10,8 @@ const QuestionsList = (props) => {
     const [questions, setQuestion] = useState([])
     const [quotes, setQuotes] = useState([])
     const [number, setNumber] = useState({ 1: "0", 2: "0", 3: "0", 4: "0", 5: "0", 6: "0", 7: 0, 8: "0", 9: "0", 10: "0" })
-    const [emotionCardInfo] = useState({ "totalPoints": 0, "date": "", "pointsId": 0, "content": "", "author": "" })
+    const [emotionCardInfo] = useState({ "totalPoints": 0, "date": "", "userId": 0, "quote": "", "author": "" })
+    const [isLoading, setIsLoading] = useState(false);
 
     const getQuestion = () => {
         return QuestionsManager.getAll()
@@ -37,6 +38,7 @@ const QuestionsList = (props) => {
     const buildingOutEmotionCard = evt => {
         evt.preventDefault();
         
+        setIsLoading(true)
         // Turning all dropdown returns into int.
         number[1] = parseInt(number[1])
         number[2] = parseInt(number[2])
@@ -53,19 +55,16 @@ const QuestionsList = (props) => {
         const dropdownCalculation = obj => Object.values(obj).reduce((a, b) => a + b);
         emotionCardInfo["totalPoints"] = dropdownCalculation(number)
         emotionCardInfo["date"] = (moment(new Date()).format("MM/DD/YYYY"))
-        emotionCardInfo["content"] = quotes.content
+        emotionCardInfo["userId"] = parseInt(sessionStorage.getItem('id'))
+        emotionCardInfo["quote"] = quotes.content
         emotionCardInfo["author"] = quotes.author
 
-        let newPointsId
-        // Posting informatin about 
-        PointsManager.post(number)
-            .then((response) => {
-                newPointsId = response.id
-                emotionCardInfo["pointsId"] = newPointsId
-                props.history.push("/emotions")
-                EmotionManager.post(emotionCardInfo)
+       
+        // Posting informatin about emotion cards
+        EmotionManager.post(emotionCardInfo)
+        .then(() => props.history.push("/emotions"))
 
-            })
+        
     }
 
     useEffect(() => {
@@ -83,7 +82,7 @@ const QuestionsList = (props) => {
                     {...props} />
                 )}
             </form>
-            <button type="button" onClick={buildingOutEmotionCard}>Submit</button>
+            <button type="button" disabled={isLoading} onClick={buildingOutEmotionCard}>Submit</button>
         </div>
     )
 

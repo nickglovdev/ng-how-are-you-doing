@@ -15,19 +15,24 @@ const Login = props => {
 
     //Find all users
     LoginManager.getAll()
-    .then(usernames => {
-      usernames.find(username => {
-        if(username.username === credentials.user && username.password === credentials.password) {
-          const loggedUser = ("credintials", JSON.stringify(credentials.user))
-          const userloggingId = ("activeUser", username.id)
-          localStorage.id = userloggingId
-          localStorage.user = loggedUser
-          props.history.push("/");
+      .then(userArrays => {
+        let users= userArrays.find((user) => {
+          if (user.username === credentials.user && user.password === credentials.password) {
+            props.setUser(credentials)
+            return user.username
+          }
+        })
+        if (typeof (users) == "undefined") {
+          props.history.push("/login")
+          alert("Username or Password are Wrong")
         } else {
-          alert("Password or Username is Wrong")
+          const loggedUser = ("credintials", JSON.stringify(credentials.user))
+          const userloggingId = ("activeUser", users.id)
+          sessionStorage.id = userloggingId
+          sessionStorage.user = loggedUser
+          props.history.push("/profiles")
         }
       })
-    })
   }
   
   return (
@@ -48,6 +53,7 @@ const Login = props => {
             required="" />
         </div>
         <button type="submit">Sign in</button>
+        <button type="button" onClick={() => props.history.push("/registration")}>Register</button>
       </fieldset>
     </form>
   );

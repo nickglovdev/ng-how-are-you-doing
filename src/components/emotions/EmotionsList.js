@@ -5,9 +5,9 @@ import EmotionManager from '../../modules/EmotionManager';
 
 const EmotionList = (props) => {
   const [cards, setCard] = useState([]);
-
+  const currentUser = sessionStorage.getItem("id")
   const getEmotionCard = () => {
-    return EmotionManager.getAll().then(allEmotionCards => {
+     return EmotionManager.getEmotionById(currentUser).then(allEmotionCards => {
       setCard(allEmotionCards)
     });
   };
@@ -15,18 +15,15 @@ const EmotionList = (props) => {
   // Group of Delete Functions that will delete out the tables for points and emotion cards.
     const deleteEmotions = id => {
       EmotionManager.delete(id)
-        .then(() => EmotionManager.getAll()
+        .then(() => EmotionManager.getEmotionById(currentUser)
           .then(setCard));
     };
     
-   
 
   useEffect(() => {
     getEmotionCard();
     
   }, []);
-
-
 
   return (
     

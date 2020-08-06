@@ -1,15 +1,16 @@
 import React from "react";
 import Moment from 'react-moment';
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 
 
 const Header = (props) => {
+    const clearUser = () => {
+        sessionStorage.clear()
+        props.history.push("/")
+    }
     return (
         <header>
             <section>
-                <div>
-                    {/* <h2>{localStorage.getItem('user').replace(/['"]+/g, '')}</h2> */}
-                </div>
                 <div>
                     <h3><Moment format="MM/DD/YYYY">{props.date}</Moment></h3>
                 </div>
@@ -22,7 +23,9 @@ const Header = (props) => {
                 <nav>
                     <ul>
                         <li><Link to="/questions">Emotion Questions</Link></li>
-                        <li><Link to="/emotions"> Emotion Cards</Link></li>
+                        <li><Link to="/emotions">Emotion Cards</Link></li>
+                        <li><Link to="/profiles">Profile Info</Link></li>
+                       {sessionStorage.getItem("user") ?  <li><Link onClick={() => clearUser()} to="/login">Logout</Link></li> : null}
                     </ul>
                 </nav>
             </section>
@@ -31,4 +34,5 @@ const Header = (props) => {
     )
 }
 
-export default Header
+
+export default withRouter(Header)
