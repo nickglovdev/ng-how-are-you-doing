@@ -6,7 +6,8 @@ const ProfilesCard = (props) => {
         <ul>
             <li>Username: {props.profile.username}</li>
             <li>Email: {props.profile.email}</li>
-            <li>Twitter: {props.profile.facebook}</li>
+            <li>Twitter: {props.profile.twitter}</li>
+            <li>Facebook: {props.profile.facebook}</li>
             <li>Linkedin: {props.profile.linkedin}</li>
         </ul>
          <button type="button"

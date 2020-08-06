@@ -18,37 +18,23 @@ const Login = props => {
       .then(userArrays => {
         let users= userArrays.find((user) => {
           if (user.username === credentials.user && user.password === credentials.password) {
-            console.log(user.username)
+            props.setUser(credentials)
             return user.username
           }
         })
         if (typeof (users) == "undefined") {
+          props.history.push("/login")
           alert("Username or Password are Wrong")
         } else {
           const loggedUser = ("credintials", JSON.stringify(credentials.user))
           const userloggingId = ("activeUser", users.id)
           localStorage.id = userloggingId
           localStorage.user = loggedUser
-          
+          props.history.push("/")
         }
-      }).then(() => props.history.push("/"))
-    // .then(usernames => {
-    //   usernames.find(username => {
-    //     if(username.username !== credentials.user || username.password !== credentials.password) {
-    //       alert("Password or Username is Wrong")
-    //       return;
-    //     }
-    //     else if(username.username === credentials.user && username.password === credentials.password) {
-    // const loggedUser = ("credintials", JSON.stringify(credentials.user))
-    // const userloggingId = ("activeUser", username.id)
-    // localStorage.id = userloggingId
-    // localStorage.user = loggedUser
-    // props.history.push("/");
-    //     } 
-    //   })
-    // })
+      })
   }
-
+  
   return (
     <form onSubmit={handleLogin}>
       <fieldset>
@@ -59,7 +45,7 @@ const Login = props => {
             id="user"
             placeholder="User"
             required="" autoFocus="" />
-
+          
           <label htmlFor="inputPassword">Password</label>
           <input onChange={handleFieldChange} type="password"
             id="password"

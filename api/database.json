@@ -5,9 +5,9 @@
       "username": "Nick",
       "password": "123",
       "email": "nick@gmail.com",
-      "twitter": "https://twitter.com/nickglovdev",
-      "facebook": "https://www.facebook.com/nick.glover.982",
-      "linkedin": "https://www.linkedin.com/in/nicholasdwglover/"
+      "twitter": "https://twitter.com/jimGlover",
+      "facebook": "https://www.facebook.com/jim",
+      "linkedin": "https://www.linkedin.com/in/jim/"
     },
     {
       "id": 2,
@@ -87,14 +87,6 @@
       "id": 5
     },
     {
-      "totalPoints": 19,
-      "date": "08/05/2020",
-      "userId": 1,
-      "quote": "Without hard work, nothing grows but weeds.",
-      "author": "Gordon Hinckley",
-      "id": 6
-    },
-    {
       "totalPoints": 20,
       "date": "08/05/2020",
       "userId": 1,
@@ -103,11 +95,11 @@
       "id": 7
     },
     {
-      "totalPoints": 20,
+      "totalPoints": 6,
       "date": "08/05/2020",
-      "userId": 1,
-      "quote": "Motivation is the art of getting people to do what you want them to do because they want to do it.",
-      "author": "Dwight D. Eisenhower",
+      "userId": 2,
+      "quote": "Optimism is the faith that leads to achievement. Nothing can be done without hope and confidence.",
+      "author": "Helen Keller",
       "id": 8
     }
   ]

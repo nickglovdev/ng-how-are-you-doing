@@ -9,7 +9,6 @@ import ProfileEditForm from "./profiles/ProfileEditForm"
 
 const ApplicationViews = (props) => {
     const hasUser = props.hasUser;
-    console.log(hasUser)
     const setUser = props.setUser; // checks to see if user is logged in
     
     return (

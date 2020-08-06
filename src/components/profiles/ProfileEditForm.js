@@ -26,7 +26,7 @@ const ProfileEditForm = (props) => {
             linkedin: profile.linkedin
         }
         ProfileManager.update(editedProfile)
-            .then(() => props.history.push("/emotions"))
+            .then(() => props.history.push("/profiles"))
     }
     useEffect(() => {
         ProfileManager.get(props.match.params.profileId)
@@ -49,6 +49,33 @@ const ProfileEditForm = (props) => {
                             onChange={fieldChange}
                             id="email"
                             value={profile.email}
+                        />
+                        <label htmlFor="twitter">Twitter:</label>
+                        <input
+                            type="text"
+                            required
+                            className="form-control"
+                            onChange={fieldChange}
+                            id="twitter"
+                            value={profile.twitter}
+                        />
+                        <label htmlFor="facebook">Linkedin:</label>
+                        <input
+                            type="text"
+                            required
+                            className="form-control"
+                            onChange={fieldChange}
+                            id="facebook"
+                            value={profile.facebook}
+                        />
+                        <label htmlFor="facebook">Facebook:</label>
+                        <input
+                            type="text"
+                            required
+                            className="form-control"
+                            onChange={fieldChange}
+                            id="linkedin"
+                            value={profile.linkedin}
                         />
                     </div>
                     <div className="alignRight">
