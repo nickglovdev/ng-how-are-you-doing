@@ -38,8 +38,8 @@ const Login = props => {
   
   return (
     <form onSubmit={handleLogin} className="loginForm">
-      <fieldset>
-        <h3>Please sign in</h3>
+      <fieldset className="loginFields">
+        <h2>Please sign in</h2>
         <label htmlFor="inputUser">User</label>
         <div className="formgrid">
           <input onChange={handleFieldChange} type="user"

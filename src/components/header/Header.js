@@ -22,15 +22,14 @@ const Header = (props) => {
                 </div>
                 <h2 className="headerText">How Are You Doing?</h2>
             </section>
-            <nav class="headerNav">
-                <ul>
-                    <li><Link to="/questions">Emotion Questions</Link></li>
-                    <li><Link to="/emotions">Emotion Cards</Link></li>
-                    <li><Link to="/profiles">Profile Info</Link></li>
+            <nav className="headerNav">
+                <ul className="headerList">
+                    <li><Link className="btnStyle" to="/questions">Emotion Questions</Link></li>
+                    <li><Link className="btnStyle" to="/emotions">Emotion Cards</Link></li>
+                    <li><Link className="btnStyle" to="/profiles">Profile Info</Link></li>
                     {sessionStorage.getItem("user") ? <li><Link onClick={() => clearUser()} to="/login">Logout</Link></li> : null}
                 </ul>
             </nav>
-
         </header>
     )
 }
