@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import LoginManager from "../../modules/LoginManager"
+import "./Login.css"
 
 const Login = props => {
   const [credentials, setCredentials] = useState([]);
@@ -36,7 +37,7 @@ const Login = props => {
   }
   
   return (
-    <form onSubmit={handleLogin}>
+    <form onSubmit={handleLogin} className="loginForm">
       <fieldset>
         <h3>Please sign in</h3>
         <label htmlFor="inputUser">User</label>

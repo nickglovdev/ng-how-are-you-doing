@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import LoginManager from "../../modules/LoginManager";
+import "./Login"
 
 
 const Registration= (props) => {
@@ -50,7 +51,7 @@ const Registration= (props) => {
     }     
         return (
             
-                <form>
+                <form className="registrationForm">
                     <fieldset>
                         <div className="formgrid">
                         <label htmlFor="username">*Username:</label>

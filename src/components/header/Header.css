@@ -1,0 +1,29 @@
+.headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    background: #ade8f4;
+}
+
+.headerTime {
+    display: flex;
+    align-self: flex-start;
+}
+
+.imageHeader {
+    width: 18em;
+}
+
+.headerText {
+    text-align: center;
+}
+
+.headerNav li {
+ list-style-type:none;
+}
+.headerNav li a {
+    text-decoration:none;
+
+}
+

@@ -1,15 +1,13 @@
 import React from "react";
-
+import "./Emotion.css"
 
 const EmotionCard = (props) => {
     return (
-        <section>
+        <section className="formEntry">
             <div className="dataManipulation">
                 <div>
                     {props.card.date}
-                </div>
-                <div>
-                    <button type="button" onClick={() => props.deleteEmotions(props.card.id)}>Delete</button>
+                    <button className="formDelete" type="button" onClick={() => props.deleteEmotions(props.card.id)}>Delete</button>
                 </div>
             </div>
 

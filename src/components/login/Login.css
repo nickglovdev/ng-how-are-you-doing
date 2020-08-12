@@ -1,0 +1,15 @@
+.loginForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.registrationForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formgrid {
+    display: flex;
+    flex-direction: column;
+}
