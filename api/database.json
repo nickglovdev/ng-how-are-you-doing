@@ -36,6 +36,16 @@
       "twitter": "twitter.com",
       "facebook": "linkedin.com",
       "linkedin": "facebook.com"
+    },
+    {
+      "username": "Tim",
+      "password": "123",
+      "rePassword": "123",
+      "email": "jim@jim.com",
+      "twitter": "twitter.ccom",
+      "facebook": "linkedin",
+      "linkedin": "facebook",
+      "id": 5
     }
   ],
   "cardSentences": [

@@ -1,0 +1,14 @@
+.questionsForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.questionsForm fieldset {
+    background:#476e9e;
+    margin-top: 9px;
+    border-radius: 10px;
+}
+
+.questionsForm select {
+    font-size:1.3em;
+}
