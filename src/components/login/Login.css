@@ -1,0 +1,106 @@
+.loginForm, .registrationForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0077b6;
+    border-radius: 6px;
+    color: white;
+}
+
+.registrationForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formgrid {
+    display: flex;
+    flex-direction: column;
+}
+
+.formgrid input {
+    font-size:1.1em
+}
+
+.loginFields label {
+    font-size: 1.4em;
+}
+
+.loginFields {
+    border:none;
+}
+
+.submitLogin {
+	background: linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+    background-color: #7892c2;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 10px 12px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #283966;
+    margin: 6px 6px 0 0;
+}
+.submitLogin:hover {
+    background: linear-gradient(to bottom, #0077b6 5%, #384d58 100%);
+	background-color:#0077b6;
+}
+.submitLogin:active {
+	position:relative;
+	top:1px;
+}
+
+.directToRegister {
+	background: linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+    background-color: #7892c2;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 10px 12px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #283966;
+    margin: 6px 6px 0 0;
+}
+.directToRegister:hover {
+    background: linear-gradient(to bottom, #0077b6 5%, #384d58 100%);
+	background-color:#0077b6;
+}
+.directToRegister:active {
+	position:relative;
+	top:1px;
+}
+/* Registration CSS */
+.registrationForm fieldset {
+   border: none; 
+}
+
+.requiredRed {
+    color:red;
+}
+
+label {
+    font-size: 1.3em;
+} 
+
+.btnRegister {
+	background: linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+    background-color: #7892c2;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 10px 12px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #283966;
+    margin: 6px 6px 0 0;
+}
+.btnRegister:hover {
+    background: linear-gradient(to bottom, #0077b6 5%, #384d58 100%);
+	background-color:#0077b6;
+}
+.btnRegister:active {
+	position:relative;
+	top:1px;
+}
+

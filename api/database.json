@@ -5,9 +5,9 @@
       "username": "Nick",
       "password": "123",
       "email": "nick@gmail.com",
-      "twitter": "https://twitter.com/jimGlover",
-      "facebook": "https://www.facebook.com/jim",
-      "linkedin": "https://www.linkedin.com/in/jim/"
+      "twitter": "https://twitter.com/nickGlover",
+      "facebook": "https://www.facebook.com/nick",
+      "linkedin": "https://www.linkedin.com/in/nick/"
     },
     {
       "id": 2,
@@ -17,6 +17,35 @@
       "twitter": "https://twitter.com/danglovdev",
       "facebook": "https://www.facebook.com/dan.glover.982",
       "linkedin": "https://www.linkedin.com/in/dandwglover/"
+    },
+    {
+      "username": "Jim",
+      "password": "123",
+      "rePassword": "123",
+      "email": "jacksaint@gmail.com",
+      "twitter": "https://twitter.com/jimGlover",
+      "facebook": "https://www.facebook.com/jim",
+      "linkedin": "https://www.linkedin.com/in/nicholasdwgloverr/",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "username": "John",
+      "password": "123",
+      "email": "john@bob.com",
+      "twitter": "twitter.com",
+      "facebook": "linkedin.com",
+      "linkedin": "facebook.com"
+    },
+    {
+      "username": "Tim",
+      "password": "123",
+      "rePassword": "123",
+      "email": "jim@jim.com",
+      "twitter": "twitter.ccom",
+      "facebook": "linkedin",
+      "linkedin": "facebook",
+      "id": 5
     }
   ],
   "cardSentences": [
@@ -65,10 +94,26 @@
     {
       "totalPoints": 75,
       "date": "08/03/2020",
-      "userId": 2,
+      "userId": 1,
       "quote": "What you get by achieving your goals is not as important as what you become by achieving your goals.",
       "author": "Zig Ziglar",
       "id": 2
+    },
+    {
+      "totalPoints": 59,
+      "date": "08/06/2020",
+      "userId": 1,
+      "quote": "Set your goals high, and don't stop till you get there.",
+      "author": "Bo Jackson",
+      "id": 4
+    },
+    {
+      "totalPoints": 43,
+      "date": "08/07/2020",
+      "userId": 1,
+      "quote": "Quality is not an act, it is a habit.",
+      "author": "Aristotle",
+      "id": 6
     }
   ]
 }

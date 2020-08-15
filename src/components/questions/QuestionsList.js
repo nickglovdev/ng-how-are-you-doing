@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import QuestionsManager from '../../modules/QuestionsManager'
 import QuestionCard from './QuestionsCard'
-import PointsManager from '../../modules/PointsManager'
 import moment from 'moment';
 import EmotionManager from '../../modules/EmotionManager';
+import "./Questions.css"
 
 
 const QuestionsList = (props) => {
@@ -74,7 +74,7 @@ const QuestionsList = (props) => {
 
     return (
         <div>
-            <form>
+            <form className="questionsForm">
                 {questions.map(question => <QuestionCard
                     key={question.id}
                     question={question}

@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import LoginManager from "../../modules/LoginManager"
+import "./Login.css"
 
 const Login = props => {
   const [credentials, setCredentials] = useState([]);
@@ -36,9 +37,9 @@ const Login = props => {
   }
   
   return (
-    <form onSubmit={handleLogin}>
-      <fieldset>
-        <h3>Please sign in</h3>
+    <form onSubmit={handleLogin} className="loginForm">
+      <fieldset className="loginFields">
+        <h2>Please sign in</h2>
         <label htmlFor="inputUser">User</label>
         <div className="formgrid">
           <input onChange={handleFieldChange} type="user"
@@ -52,8 +53,8 @@ const Login = props => {
             placeholder="Password"
             required="" />
         </div>
-        <button type="submit">Sign in</button>
-        <button type="button" onClick={() => props.history.push("/registration")}>Register</button>
+        <button className="submitLogin" type="submit">Sign in</button>
+        <button className="directToRegister" type="button" onClick={() => props.history.push("/registration")}>Register</button>
       </fieldset>
     </form>
   );

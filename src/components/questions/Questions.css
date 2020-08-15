@@ -1,0 +1,16 @@
+.questionsForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.questionsForm fieldset {
+    background:#0077b6;
+    margin-top: 9px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px black;
+    color: white;
+}
+
+.questionsForm select {
+    font-size:1.3em;
+}

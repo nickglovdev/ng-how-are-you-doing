@@ -1,12 +1,12 @@
 
 import React, {useState} from "react";
-
+import "./Questions.css"
 
 const QuestionCard = (props) => {   
    
     return (
         <fieldset>
-            <label><h3>{props.question.cardSentence}</h3></label>
+            <label><h4>{props.question.cardSentence}</h4></label>
             <div>
                 <select id={props.question.id} onChange={props.fieldChange}>
                     <option value="0">0</option>
