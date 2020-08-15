@@ -6,8 +6,7 @@ const EmotionCard = (props) => {
         <section className="formEntry">
             <div className="dataManipulation">
                 <div>
-                    {props.card.date}
-                    <button className="formDelete" type="button" onClick={() => props.deleteEmotions(props.card.id)}>Delete</button>
+                    <span className="emotionTime">{props.card.date}</span>
                 </div>
             </div>
 
@@ -19,7 +18,12 @@ const EmotionCard = (props) => {
 
             <div className="scorePoints">
                 <div>
-                    Total Points: {props.card.totalPoints}
+                    <span className="totalPointsTitle">Total Points</span>: <span className="totalPoints">{props.card.totalPoints}</span>
+                </div>
+            </div>
+            <div>
+                <div>
+                <button className="formDelete" type="button" onClick={() => props.deleteEmotions(props.card.id)}>Delete</button>
                 </div>
             </div>
         

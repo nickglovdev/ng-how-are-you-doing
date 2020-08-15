@@ -31,7 +31,7 @@ const EmotionList = (props) => {
 
       <h2>Emotion Cards</h2>
 
-      <div className="container-cards">
+      <div className="containerCards">
         {cards.map(card => <EmotionsCard
           key={card.id}
           card={card}

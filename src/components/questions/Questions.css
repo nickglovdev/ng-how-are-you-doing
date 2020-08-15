@@ -4,9 +4,11 @@
 }
 
 .questionsForm fieldset {
-    background:#476e9e;
+    background:#0077b6;
     margin-top: 9px;
     border-radius: 10px;
+    box-shadow: 2px 2px 1px black;
+    color: white;
 }
 
 .questionsForm select {

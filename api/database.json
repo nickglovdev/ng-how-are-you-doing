@@ -7,7 +7,7 @@
       "email": "nick@gmail.com",
       "twitter": "https://twitter.com/nickGlover",
       "facebook": "https://www.facebook.com/nick",
-      "linkedin": "https://www.linkedin.com/in/jim/"
+      "linkedin": "https://www.linkedin.com/in/nick/"
     },
     {
       "id": 2,
@@ -94,39 +94,23 @@
     {
       "totalPoints": 75,
       "date": "08/03/2020",
-      "userId": 2,
+      "userId": 1,
       "quote": "What you get by achieving your goals is not as important as what you become by achieving your goals.",
       "author": "Zig Ziglar",
       "id": 2
     },
     {
-      "totalPoints": 60,
-      "date": "08/07/2020",
-      "userId": 1,
-      "quote": "In the depth of winter, I finally learned that there was within me an invincible summer.",
-      "author": "Albert Camus",
-      "id": 3
-    },
-    {
       "totalPoints": 59,
-      "date": "08/07/2020",
+      "date": "08/06/2020",
       "userId": 1,
       "quote": "Set your goals high, and don't stop till you get there.",
       "author": "Bo Jackson",
       "id": 4
     },
     {
-      "totalPoints": 29,
-      "date": "08/07/2020",
-      "userId": 1,
-      "quote": "In the middle of every difficulty lies opportunity.",
-      "author": "Albert Einstein",
-      "id": 5
-    },
-    {
       "totalPoints": 43,
       "date": "08/07/2020",
-      "userId": 3,
+      "userId": 1,
       "quote": "Quality is not an act, it is a habit.",
       "author": "Aristotle",
       "id": 6
