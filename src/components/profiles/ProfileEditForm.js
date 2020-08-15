@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
-import OwnerManager from "../../modules/ProfileManager"
 import ProfileManager from "../../modules/ProfileManager";
+import "./Profile.css"
 
 const ProfileEditForm = (props) => {
     const [profile, setProfile] = useState({username: "", password: "", email: "", twitter: "",  facebook: "", linkedin: ""})
@@ -38,7 +38,7 @@ const ProfileEditForm = (props) => {
 
       return (
         <>
-            <form>
+            <form className="profileEditSection">
                 <fieldset>
                     <div className="formgrid">
                     <label htmlFor="email">Email:</label>
@@ -79,10 +79,9 @@ const ProfileEditForm = (props) => {
                         />
                     </div>
                     <div className="alignRight">
-                        <button
+                        <button className="registerButton"
                             type="button" disabled={isLoading}
                             onClick={updateExistingProfile}
-                            className="btn btn-primary"
                         >Submit</button>
                     </div>
                 </fieldset>

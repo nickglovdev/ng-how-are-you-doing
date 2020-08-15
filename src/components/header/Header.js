@@ -27,7 +27,7 @@ const Header = (props) => {
                     <li><Link className="btnStyle" to="/questions">Emotion Questions</Link></li>
                     <li><Link className="btnStyle" to="/emotions">Emotion Cards</Link></li>
                     <li><Link className="btnStyle" to="/profiles">Profile Info</Link></li>
-                    {sessionStorage.getItem("user") ? <li><Link onClick={() => clearUser()} to="/login">Logout</Link></li> : null}
+                    {sessionStorage.getItem("user") ? <li><Link className="btnStyle" onClick={() => clearUser()} to="/login">Logout</Link></li> : null}
                 </ul>
             </nav>
         </header>

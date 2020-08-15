@@ -54,7 +54,7 @@ const Registration= (props) => {
                 <form className="registrationForm">
                     <fieldset>
                         <div className="formgrid">
-                        <label htmlFor="username">*Username:</label>
+                        <label htmlFor="username"><span className="requiredRed">* </span>Username:</label>
                             <input
                                 type="text"
                                 required
@@ -63,7 +63,7 @@ const Registration= (props) => {
                                 id="username"
                                 value={credentials.username}
                             />
-                            <label htmlFor="password">*Password:</label>
+                            <label htmlFor="password"><span className="requiredRed">* </span>Password:</label>
                             <input
                                 type="password"
                                 required
@@ -72,7 +72,7 @@ const Registration= (props) => {
                                 id="password"
                                 value={credentials.password}
                             />
-                            <label htmlFor="password">*Re Enter Password:</label>
+                            <label htmlFor="password"><span className="requiredRed">* </span>Re Enter Password:</label>
                             <input
                                 type="password"
                                 required
@@ -117,7 +117,7 @@ const Registration= (props) => {
                         <div className="alignRight">
                             <button
                                 onClick={createNewUser}
-                                className="btn btn-primary"
+                                className="btnRegister"
                             >Submit</button>
                         </div>
                     </fieldset>

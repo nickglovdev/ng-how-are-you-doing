@@ -53,8 +53,8 @@ const Login = props => {
             placeholder="Password"
             required="" />
         </div>
-        <button type="submit">Sign in</button>
-        <button type="button" onClick={() => props.history.push("/registration")}>Register</button>
+        <button className="submitLogin" type="submit">Sign in</button>
+        <button className="directToRegister" type="button" onClick={() => props.history.push("/registration")}>Register</button>
       </fieldset>
     </form>
   );
