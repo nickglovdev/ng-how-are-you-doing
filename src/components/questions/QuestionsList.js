@@ -56,9 +56,11 @@ const QuestionsList = (props) => {
         emotionCardInfo["totalPoints"] = dropdownCalculation(number)
         emotionCardInfo["date"] = (moment(new Date()).format("MM/DD/YYYY"))
         emotionCardInfo["userId"] = parseInt(sessionStorage.getItem('id'))
-        emotionCardInfo["quote"] = quotes.content
-        emotionCardInfo["author"] = quotes.author
-
+        // API will need to be added back once it is fixed. Hard Coding it right now.
+        // emotionCardInfo["quote"] = quotes.content
+        // emotionCardInfo["author"] = quotes.author
+        emotionCardInfo["quote"] = "No one can make you feel inferior without your consent."
+        emotionCardInfo["author"] = "Eleanor Roosevelt"
        
         // Posting informatin about emotion cards
         EmotionManager.post(emotionCardInfo)
@@ -82,7 +84,7 @@ const QuestionsList = (props) => {
                     {...props} />
                 )}
             </form>
-            <button type="button" disabled={isLoading} onClick={buildingOutEmotionCard}>Submit</button>
+            <button className="submitQuestions" type="button" disabled={isLoading} onClick={buildingOutEmotionCard}>Submit</button>
         </div>
     )
 
