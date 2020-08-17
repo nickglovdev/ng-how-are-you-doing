@@ -9,14 +9,14 @@
 ```sh
 npx create-react-app 
 npm install react-router-dom npm 
-install --save bootstrap
+
 ```
 
 ## Usage
 
 ```sh
-npm start 
-json-server
+In main directory "npm start" 
+In main API folder "json-server -p 5002 -w database.json"
 
 ```
 
