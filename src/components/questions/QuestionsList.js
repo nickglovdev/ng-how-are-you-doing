@@ -56,11 +56,9 @@ const QuestionsList = (props) => {
         emotionCardInfo["totalPoints"] = dropdownCalculation(number)
         emotionCardInfo["date"] = (moment(new Date()).format("MM/DD/YYYY"))
         emotionCardInfo["userId"] = parseInt(sessionStorage.getItem('id'))
-        // API will need to be added back once it is fixed. Hard Coding it right now.
-        // emotionCardInfo["quote"] = quotes.content
-        // emotionCardInfo["author"] = quotes.author
-        emotionCardInfo["quote"] = "No one can make you feel inferior without your consent."
-        emotionCardInfo["author"] = "Eleanor Roosevelt"
+        emotionCardInfo["quote"] = quotes.content
+        emotionCardInfo["author"] = quotes.author
+      
        
         // Posting informatin about emotion cards
         EmotionManager.post(emotionCardInfo)

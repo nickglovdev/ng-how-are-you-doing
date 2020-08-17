@@ -76,6 +76,14 @@
       "quote": "Quality is not an act, it is a habit.",
       "author": "Aristotle",
       "id": 6
+    },
+    {
+      "totalPoints": 51,
+      "date": "08/17/2020",
+      "userId": 1,
+      "quote": "No one can make you feel inferior without your consent.",
+      "author": "Eleanor Roosevelt",
+      "id": 7
     }
   ]
 }

@@ -21,9 +21,9 @@ const EmotionCard = (props) => {
                     <span className="totalPointsTitle">Total Points</span>: <span className="totalPoints">{props.card.totalPoints}</span>
                 </div>
             </div>
-            <div>
+            <div className="">
                 <div>
-                <button className="formDelete" type="button" onClick={() => props.deleteEmotions(props.card.id)}>Delete</button>
+                    <button className="formDelete" type="button" onClick={() => props.deleteEmotions(props.card.id)}>Delete</button>
                 </div>
             </div>
         
